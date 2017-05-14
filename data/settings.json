@@ -1,0 +1,20 @@
+{
+  "wifi.ssid":"<SSID>",
+  "wifi.pass":"<PASS>",
+
+  "ap.ssid":"",
+  "ap.pass":"",
+
+  "thingy.server":"api.thingy.io",
+  "thingy.port":443,
+  "thingy.finger":"F179CC7F4012BBC89228E0204FEE1A7A184347F6",
+
+  "axon.uid":"<UiD>",
+  "axon.sid":"<SiD",
+
+  "mqtt.server":"mqtt.thingy.io",
+  "mqtt.port":1883,
+
+  "rf.power":80,
+  "timestamp":0
+}
