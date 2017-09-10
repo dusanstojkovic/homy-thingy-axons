@@ -15,7 +15,7 @@ DHT dht(D4, DHT22);
 
 void setup() {
 //	Serial.begin(115200);
-	//Serial.setDebugOutput(true);
+//	Serial.setDebugOutput(true);
 
 	CONS << endl << endl  << F("Homy.Room") << " - " << __DATE__ << " " << __TIME__ << endl << "#" << endl << endl;
 
@@ -50,16 +50,27 @@ void loop()
 	homyNode["Battery (V)"].put(String(bat_V,2)+" V");
 
 	float h = dht.readHumidity();
-  float t = dht.readTemperature();
+	float t = dht.readTemperature();
 
 	if (!isnan(h) && !isnan(t))
 	{
-
 		homyNode["Humidity"].put(String(h,2));
 		homyNode["Temperature"].put(String(t,2));
-  }
+	}
 
 	CONS << F("Homy - Going for a sleep") << endl << endl << endl;
 
 	ESP.deepSleep(600 *1000000UL); // 600 s
+
+	/// Sleep alternative
+	/*
+	WiFi.disconnect();
+	WiFi.mode(WIFI_OFF);
+
+	delay(100);
+	ESP.deepSleep(60000000, WAKE_RF_DEFAULT);
+ 	ESP.deepSleep(100000000UL, WAKE_RF_DISABLED);
+	delay(100);
+	*/
+	/// Sleep alternative
 }
