@@ -2,7 +2,7 @@
 
 This repository contains firmwares for various nodes of the [Homy system](http://quo.vadis.stojkovic.ch/homy-2-0/).
 
-The nodes are based on [WeMos D1 mini](https://www.wemos.cc/product/d1-mini.html),
+The nodes are based on [WeMos D1 mini](https://wiki.wemos.cc/products:d1:d1_mini),
 and using *Wi-Fi* for connectivity and [Thingy.IO](http://thingy.io) system as
 integration platform.
 
@@ -21,10 +21,10 @@ described in personal blog [quo.vadis.stojkovic.ch](http://quo.vadis.stojkovic.c
 
 ## Additional information
 
-More information on how to use WeMos D1 mini you can find here : [https://www.wemos.cc/tutorial/get-started-arduino.html](https://www.wemos.cc/tutorial/get-started-arduino.html).
+More information on how to use WeMos D1 mini you can find here : [https://www.wemos.cc/tutorial/get-started-arduino.html](https://wiki.wemos.cc/tutorials:get_started:get_started_in_arduino).
 
 Detailed documentation about the Thingy system and this library you can find here: [http://docs.thingy.io](http://docs.thingy.io).
 
 ## License
 
-Copyright (c) 2017 Dušan Stojković
+Copyright (c) 2018 Dušan Stojković
